@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+//A protocol holds functions and variables definitions not their body
+//Protocol is similar to interfaces
+protocol CarProto{
+    //specifies that the class that conforms to this protocol mus be able to get and set the value of color
+    //Conforming is aclass promosing to include everything that a protocol contains
+    var color:String {get set}
+    func drive()
+    func isAllWheelDrive()-&gt;Bool
+}
+
+class Car{
+    
+}
+//BMW extends car and implements/conforms to CarProto
+
+class BMW:Car, CarProto{
+    var color: String 
+    init(color:String){
+        self.color = color
+    }
+    func drive() {
+    }
+
+    func isAllWheelDrive() -&gt; Bool {
+        return true
+    }
+
+    
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 694}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+var x = 19
+
+if x&gt;20{
+    print("greater than 10")
+}else if x&gt;10 {
+    print("greater than 20")
+}else{
+    print("false")
+}
+
+var y: Int? = 3
+//unwrapping y
+//if is a conditional
+//if the value of y was nil the block would not be executed
+if let value=y{
+    
+}
+
+var a = 1
+var b = 12
+
+// || signifies if either one of the conditions is true execute the block of code
+// &amp;&amp; signifies if both of the conditions are true execute the block of code
+if a&gt;10 || x&lt;200 {
+    print("Hello")
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 500}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+//Function -block of code/set of instructions which is signified into a group by a function name
+
+func addTwoNumbers(a: Int, b: Int) -&gt; Int{
+    return a + b
+}
+
+func squareNumber(number: Int)-&gt; Int{
+    return number * number
+}
+
+func log(){
+    print("Hello there")
+}
+
+var x = 3
+var y = 7
+let sum = addTwoNumbers(a: x, b: y)
+print("Sum is: ", sum)
+let squaredSum = squareNumber(number: sum)
+print("Squared sum is: ", squaredSum)
+//Calling the log function
+log()
+func isEven(number: Int)-&gt; Bool{
+    if number % 2 == 0 {
+        return true
+    }
+    return false
+}
+
+let result = isEven(number: 4)
+print("Is 4 even = ", result)
+let result1 = isEven(number: 11)
+print("Is 11 even = ", result1)
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 710}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

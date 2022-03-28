@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+//Loop is a repetitive task
+let numbers=[1,2,3,4,5,6]
+print("For loop")
+for n in numbers{
+    let result = n*2
+    print(result)
+}
+
+//do something while a condition is met
+print("While Loop")
+var x = 0
+while x&lt;=3{
+    print("Test: ",x)
+    //increment x
+    x+=1
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 283}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

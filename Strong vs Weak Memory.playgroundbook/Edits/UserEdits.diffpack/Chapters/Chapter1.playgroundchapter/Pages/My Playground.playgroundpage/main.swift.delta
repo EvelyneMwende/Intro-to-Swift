@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+//Strong vs Weak
+//we need to specify when code is allowed to get rid of a value you created/stored in memory
+//Strong variables
+//variables are strong by default unless you prefix it with weak
+var str = "abc"
+//Strong and weak will tell Swift what type of usage that variable will have and as a result when it is sMondayomontar?afe to get rid of it in memory
+//Analogy: Theres a kid holding a helium balloon (two variables one is the kid and the other is the helium ballon)
+//The kid is a strong object while the balloon is a weak object because its up in the air
+//If the child disappears the balloon also disappears but if the balloon disappears the child will still be there
+
+//CONCLUSION:
+//Swift will get rid of a weak variable if there is no other strong variable pointing to it
+
+class Child{
+    //not a correct declaration of a weak variable
+    weak var balloon = "str"
+}
+//once the instance of Child() goes away, everything that is connected to it also goes away
+var joe = Child()
+//Memory is limited
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1030}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

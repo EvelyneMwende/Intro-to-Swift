@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+//They are both collections
+//Array enumerated/ordered collection of one or more items
+var names:[String] = ["Joe", "John", "Jacob"]
+var numbers: [Int]=[1,2,3,4]
+var mix: [Any]=[1,2,"Joe", "John",1.23]
+
+for num in numbers{
+    print(num)
+}
+
+//DICTIONARIES have key-value pairs
+var cars:[String:Int]=["bmw":3,"Honda":1,"Lexus":3]
+print(cars)
+for car in cars{
+    print(car)
+}
+
+for (key,value) in cars{
+    print("Key name: \(key)")
+}
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 452}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

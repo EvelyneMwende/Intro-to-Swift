@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+
+func numLargerThanFive(number: Int)-&gt;Bool{
+    //guard is used to mean 'make sure number is greater than 5'
+    //You can chain a guard statement/add more conditionals to it
+    //guard number&gt;5, number&gt;4 else{ return false }
+    guard number&gt;5 else{ return false }
+    //if number is not greater than 5
+    return true
+}
+
+//Guard is also used to unwrap optionals
+var text: String?
+text = "hello world"
+
+if let value = text{
+    print(value)
+}
+
+func printValue(){
+    //guard and make sure theres a value.If there is continue else stop
+    guard let value = text else{return}
+    print("Value using guard: ",value)
+}
+
+printValue()
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 650}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+
+var a = 1 //Int
+var b = 1.05 //Double
+var c = 1.00000055 //Float
+
+var result = a + Int(b)
+print(result)
+
+var result2 = Double(a) + b
+print(result2)
+
+var x:Int? = 1 //Int
+var y:Double? = 1.05 //Double
+var z:Float? = 1.00000055 //Float
+
+if let value=y{
+    print(value)
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 289}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

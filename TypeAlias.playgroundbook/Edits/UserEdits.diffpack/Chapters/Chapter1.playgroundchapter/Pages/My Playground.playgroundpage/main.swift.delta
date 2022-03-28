@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+//It is way to give another name to a given type
+//Giving String the alias Code
+typealias Code = String
+
+var code:String = ""
+print(type(of: code))
+
+var code1: Code = ""
+print(type(of: code1))
+
+func validateCode(code: Code){
+}
+
+typealias Address = [String: String]
+var address: Address = ["" : ""]
+
+func validateAddress(address: [String: String]){
+    
+}
+//Same as address
+func validateAddress1(address:Address){
+}
+//Taking in a string and returning a boolean
+typealias PromoCodeValidationFunction = ((String)-&gt;(Bool))
+//The two below are similar
+var validateFunction: ((String)-&gt;(Bool))?
+var validateFunction1: PromoCodeValidationFunction
+func didEnterCode(code:String){
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 692}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

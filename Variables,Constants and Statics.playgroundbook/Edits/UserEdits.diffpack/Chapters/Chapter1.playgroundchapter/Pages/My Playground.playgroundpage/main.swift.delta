@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//The Foundation framework defines a base layer of functionality that is required for almost all applications. It provides primitive classes and introduces several paradigms that define functionality not provided by the language or runtime. Provide a small set of basic utility classes.
+import Foundation
+//Variables, Constants and Statics
+//Variable declare values that can be changed using the key word 'var'
+var str = "Hello world"
+var x = 4
+var y = 1
+
+y = 2
+//Let is used to declare constants(values that do not chnage)
+let z = 3 
+
+//A Class can have Properties that are common to all instances of the class. Such properties are called static properties, and are declared with the static keyword
+class Employee
+{
+    static var employeeCount: Int = 0
+    static func incrementEmployeeCount()
+    {
+        Employee.employeeCount += 1
+    }
+    static func getEmployeeCount() -&gt; Int
+    {
+        return employeeCount
+    }
+}
+
+
+Employee.incrementEmployeeCount()
+Employee.incrementEmployeeCount()
+print(Employee.getEmployeeCount())
+
+//If we create multiple person objects every single one
+//will have a different constant if we use let ie(let dave =Person())
+//However the static keyword we will have only one version od dave throughout the entire application (static let dave =  Person())
+//NOTE:A static NEEDS to go inside of a class.It needs to be a part of an object
+
+class Person{
+    static let age =  12
+    let lastName = "Smith"
+}
+
+//Each of the variables below are an instance of the class Person
+//Age will always be 12 cause of the static keyword
+var john = Person()
+var jen = Person()
+var Bri = Person()
+var Tim = Person()
+
+let age = Person.age
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1660}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+import UIKit
+
+//Enum is a way to represent multiple cases
+//enum can inherits other classes
+enum States{
+    //Representing states for someone registering for a particular service
+    case InProgress
+    case Aborted
+    case Complete
+    case WillStart
+    //The above can also be written as
+    //case InProgress, Aborted, Complete, WillStart
+}
+
+
+//var currrent = States.InProgress
+var current: States?
+//when the person starts
+current = .InProgress
+
+//current = .InProgress.rawValue can access a string value set for the enum
+//enum States: String{
+//    case InProgress = "1"
+//    case Aborted = "2"
+//    case Complete = "3"
+//    case WillStart = "4"
+//}
+
+
+//Changing color of a button when a user is indifferet states one can use enums
+//var color: UIColor?
+//color = .red
+//Similar to color = UIColor.red
+//SWITCH STATEMENTS
+func checkState(){
+    //switch statement has to be exhaustive-provide it with what to do in all cases
+    switch current{
+    case .InProgress: 
+        //do something
+        print("In progress")
+        break
+    case .Aborted: 
+        //do something
+        print("Aborted")
+        break
+    case .Complete: 
+        //do something
+        print("Complete")
+        break
+    case .WillStart: 
+        //do something
+        print("Will Start")
+        break
+    default:
+        break
+    
+    }
+    
+}
+checkState()
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1376}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+import UIKit //holds UI elements(buttons, switches images)
+
+//var x is of type Integer
+var x = 3
+//var name is of type String
+var name = "Joe"
+//checking the type
+print("x is of type ", type(of: x))
+print("name is of type ",type(of: name))
+//Swift is a strongly typed languange: If a variable is assigned a particukar type, for the duration of that app its type cannot change
+var lastName: String = "last"
+let age:Int = 22
+let price:Double = 1.99
+var height: Float = 200.1234567
+
+class Person{
+}
+
+//var John is of type Person
+var john: Person = Person()
+print("john is of type ",type(of: john))
+//You can also writhe it like:
+//var john = Person() swift will infer that john is of type Person
+
+//creating a variable of type button
+var button1: UIButton = UIButton() 
+//can also be written as
+//var button1 = UIButton()
+
+var isComplete: Bool = false
+isComplete = true
+print("isComplete is of type ",type(of: isComplete))
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 938}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
